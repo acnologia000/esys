@@ -2,6 +2,8 @@ module esys
 
 go 1.18
 
+require github.com/lib/pq v1.10.6
+
 require (
 	github.com/jackc/chunkreader/v2 v2.0.1 // indirect
 	github.com/jackc/pgconn v1.12.1 // indirect

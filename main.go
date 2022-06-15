@@ -4,15 +4,13 @@ import (
 	"database/sql"
 	"log"
 	"net/http"
-
-	_ "github.com/jackc/pgx/v4/stdlib"
 )
 
 const DEBUG = true
 
 func main() {
 
-	db, err := sql.Open("pgx", "")
+	db, err := connect()
 
 	if err != nil {
 		log.Fatal(err)
