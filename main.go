@@ -19,5 +19,6 @@ func main() {
 	}
 
 	http.HandleFunc("/employerLogin", login(db))
+	http.HandleFunc("/admin_register", register(db))
 	log.Fatal(http.ListenAndServe("0.0.0.0:5000", http.DefaultServeMux))
 }

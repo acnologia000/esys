@@ -38,7 +38,7 @@ const SUCCESS_RESPONSE = `{"success":"true"}`
 // sql statements
 const (
 	SEARCH_ITEM_QUERY = "SELECT * From items where name = $1"
-	INSERT_NEW_USER   = "INSERT INTO USERS (fullname, email, password_hash) values ($1,$2,$3)"
+	INSERT_NEW_USER   = "INSERT INTO admins(fullname, email, password_hash) values ($1,$2,$3)"
 	LOGIN_SELECT      = "select password_hash from users where email = $1"
 )
 

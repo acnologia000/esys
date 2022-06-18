@@ -23,7 +23,7 @@ func TestRegister(t *testing.T) {
 		t.Error(err)
 	}
 
-	req := httptest.NewRequest("POST", "/login", strings.NewReader(body))
+	req := httptest.NewRequest("POST", "/register_admin", strings.NewReader(body))
 	res := httptest.NewRecorder()
 
 	register(db)(res, req)
@@ -41,7 +41,7 @@ func TestRegister(t *testing.T) {
 		t.Error(cause)
 	}
 
-	_, err = db.Exec("delete from users")
+	_, err = db.Exec("delete from admins")
 
 	if err != nil {
 		t.Log("cleanup failed")
