@@ -44,15 +44,14 @@ const (
 
 // report non verbose errors in production
 const (
-	INVALID_PAGE_NUMBER    = "page number too big or invalid number" // INVAID_PAGE_NUMBER
-	INVALID_JSON           = "invalid input format"                  // "BAD_REQUEST"
-	ILLEGAL_REQUEST_METHOD = "request method not allowed"            // "BAD_REQUEST"
-	INVALID_METHOD         = "invalid method"                        // "BAD_REQUEST"
-	JSON_DECODE_ERROR      = "JSON_DECODE_ERROR"                     // "BAD_REQUEST"
-	STMT_PREPARE_ERROR     = "error in preparing statement"          // "DB_ERR"
-	QUERY_ERROR            = "error in executing querrys"            // "DB_ERR"
-	ROW_SCAN_ERROR         = "error in Scanning rows"                // "DB_ERR"
-	PASSWORD_ERROR         = "username or password incorrect"        // "WRONG_CREDENTIALS"
+	INVALID_JSON           = "invalid input format"           // "BAD_REQUEST"
+	ILLEGAL_REQUEST_METHOD = "request method not allowed"     // "BAD_REQUEST"
+	INVALID_METHOD         = "invalid method"                 // "BAD_REQUEST"
+	JSON_DECODE_ERROR      = "JSON_DECODE_ERROR"              // "BAD_REQUEST"
+	STMT_PREPARE_ERROR     = "error in preparing statement"   // "DB_ERR"
+	QUERY_ERROR            = "error in executing querrys"     // "DB_ERR"
+	ROW_SCAN_ERROR         = "error in Scanning rows"         // "DB_ERR"
+	PASSWORD_ERROR         = "username or password incorrect" // "WRONG_CREDENTIALS"
 	INTERNAL_SERVER_ERROR  = "ERR"
 )
 
