@@ -1,5 +1,7 @@
+drop table if exists admins;
 create table admins(
-    name varchar(30),
+    full_name varchar(30),
     email varchar(50) primary key,
-    access_level int,
+    password_hash varchar(512),
+    access_level int default 0
 );
